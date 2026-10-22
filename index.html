@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adrián Berenguer Agustí — Bioinformatician</title>
+  <meta name="description" content="Bioinformatician working on long-read transcriptomics and genomics within the SQANTI ecosystem.">
+  <meta name="theme-color" content="#0a0c0e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=d18a4bf">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Back to top">
+    <img src="assets/img/favicon.svg" alt="" width="22" height="22">
+    <span class="brand__name">Adrián Berenguer Agustí</span>
+    <span class="brand__role mono" data-i18n="role">— Bioinformatician</span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#top" data-i18n="nav.home">Home</a>
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#approach" data-i18n="nav.approach">Approach</a>
+    <a href="#toolbox" data-i18n="nav.toolbox">Toolbox</a>
+    <a href="#education" data-i18n="nav.education">Education</a>
+    <a href="#wetlab" data-i18n="nav.wetlab">Wet lab</a>
+    <a href="#publications" data-i18n="nav.publications">Publications</a>
+    <a href="#awards" data-i18n="nav.awards">Awards</a>
+    <a href="#outreach" data-i18n="nav.outreach">Outreach</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <a href="about.html" class="nav__about" data-i18n="nav.about">About me</a>
+  </nav>
+  <div class="topbar__actions">
+    <a class="cv-link mono" href="assets/cv/Adrian_Berenguer_Agusti_CV.pdf" target="_blank" rel="noopener">CV</a>
+    <button class="lang-toggle mono" type="button" aria-label="Switch language">
+      <span data-lang="en">EN</span><span aria-hidden="true">/</span><span data-lang="es">ES</span>
+    </button>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero: looping intro animation with the motto -->
+  <section class="hero" id="top" data-phase="1">
+    <canvas id="intro-canvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <p class="hero__phase mono" id="intro-phase">01 — raw reads</p>
+      <h1 class="hero__motto" data-i18n="motto">
+        <span class="line">I transform</span>
+        <span class="line motto__data mono">data</span>
+        <span class="line">into</span>
+        <span class="line motto__results">Results.</span>
+      </h1>
+    </div>
+    <a class="hero__scroll mono" href="#intro" data-i18n="scroll">Scroll</a>
+  </section>
+
+  <!-- Intro -->
+  <section class="intro section" id="intro">
+    <div class="container">
+      <p class="place mono reveal"><span class="place__pin" aria-hidden="true"></span><span data-i18n="place">Valencia, Spain, Europe</span></p>
+      <h2 class="intro__hello reveal" data-i18n="intro.hello">Hi! I am Adrián.</h2>
+      <p class="intro__lead reveal" data-i18n="intro.lead">
+        Bioinformatician working on <strong>long-read transcriptomics and genomics</strong>
+        within the SQANTI ecosystem at the Genomics of Gene Expression Lab
+        (I2SysBio, UV-CSIC). I can take on <strong>any kind of bioinformatic
+        analysis</strong>, from raw sequencing reads to publication-ready
+        results.
+      </p>
+      <dl class="stats reveal">
+        <div class="stat">
+          <dt class="mono" data-i18n="stat.release.k">SQANTI3 contributor</dt>
+          <dd><span class="accent">v6.1</span></dd>
+        </div>
+        <div class="stat">
+          <dt class="mono" data-i18n="stat.msc.k">MSc Bioinformatics</dt>
+          <dd>9.09<span class="muted">/10</span></dd>
+        </div>
+        <div class="stat">
+          <dt class="mono" data-i18n="stat.papers.k">Papers under review</dt>
+          <dd>2</dd>
+        </div>
+        <div class="stat">
+          <dt class="mono" data-i18n="stat.awards.k">Awards &amp; prizes</dt>
+          <dd>16</dd>
+        </div>
+      </dl>
+      <a class="link-arrow intro__cv reveal" href="assets/cv/Adrian_Berenguer_Agusti_CV.pdf" target="_blank" rel="noopener" data-i18n="cv.download">Download my CV (PDF)</a>
+    </div>
+  </section>
+
+  <!-- 01 Selected work -->
+  <section class="section" id="work">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">01</span>
+        <h2 data-i18n="work.title">Selected work</h2>
+        <p class="section__sub" data-i18n="work.sub">Open-source tools, from long-read transcriptomics to protein structure, and what I build at hackathons.</p>
+      </header>
+
+      <h3 class="subhead mono reveal" data-i18n="work.bio">Bioinformatics projects</h3>
+
+      <article class="feature reveal">
+        <div class="feature__visual" aria-hidden="true">
+          <svg viewBox="0 0 400 260" class="viz viz--isoforms">
+            <g class="viz__sample" transform="translate(30 50)">
+              <text class="viz__label" x="0" y="-14">sample 1</text>
+              <line x1="0" y1="0" x2="300" y2="0"/>
+              <rect x="0" y="-7" width="50" height="14"/><rect x="90" y="-7" width="40" height="14"/>
+              <rect x="170" y="-7" width="30" height="14"/><rect x="250" y="-7" width="50" height="14"/>
+              <text class="viz__ok" x="325" y="5">✓</text>
+            </g>
+            <g class="viz__sample" transform="translate(30 120)">
+              <text class="viz__label" x="0" y="-14">sample 2</text>
+              <line x1="0" y1="0" x2="300" y2="0"/>
+              <rect x="0" y="-7" width="50" height="14"/><rect x="90" y="-7" width="40" height="14"/>
+              <rect x="250" y="-7" width="50" height="14"/>
+              <text class="viz__ok" x="325" y="5">✓</text>
+            </g>
+            <g class="viz__sample viz__sample--artifact" transform="translate(30 190)">
+              <text class="viz__label" x="0" y="-14">sample 3</text>
+              <line x1="20" y1="0" x2="210" y2="0"/>
+              <rect x="20" y="-7" width="30" height="14"/><rect x="120" y="-7" width="25" height="14"/>
+              <rect x="180" y="-7" width="30" height="14"/>
+              <text class="viz__ko" x="325" y="5">✕</text>
+            </g>
+          </svg>
+        </div>
+        <div class="feature__body">
+          <span class="feature__num mono">01</span>
+          <p class="feature__cat mono" data-i18n="f1.cat">Open-source software · Long-read RNA-seq</p>
+          <h3 data-i18n="f1.title">SQANTI3 — Multi-sample filter</h3>
+          <p data-i18n="f1.desc">
+            A multi-sample filtering module for long-read isoform quality
+            control in SQANTI3, the reference tool for curating long-read
+            transcriptomes. Developed during my internship at the Conesa Lab
+            and merged into the official release.
+          </p>
+          <ul class="tags mono">
+            <li>Python</li><li>R</li><li data-i18n="tag.longreads">Long reads</li><li data-i18n="tag.isoqc">Isoform QC</li>
+          </ul>
+          <div class="feature__foot">
+            <div class="metric">
+              <span class="metric__v">v6.1</span>
+              <span class="metric__k mono" data-i18n="f1.metric">official release</span>
+            </div>
+            <a class="link-arrow" href="https://github.com/ConesaLab/SQANTI3" target="_blank" rel="noopener" data-i18n="f1.link">View on GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip reveal">
+        <div class="feature__visual" aria-hidden="true">
+          <svg viewBox="0 0 400 260" class="viz viz--noref">
+            <text class="viz__label" x="30" y="40">reference genome</text>
+            <line class="viz__ref" x1="30" y1="56" x2="370" y2="56"/>
+            <text class="viz__ko viz__ko--small" x="186" y="62">?</text>
+            <g transform="translate(30 110)">
+              <line x1="0" y1="0" x2="290" y2="0"/>
+              <rect x="0" y="-7" width="60" height="14"/><rect x="110" y="-7" width="45" height="14"/><rect x="230" y="-7" width="60" height="14"/>
+            </g>
+            <g transform="translate(60 160)">
+              <line x1="0" y1="0" x2="230" y2="0"/>
+              <rect x="0" y="-7" width="30" height="14"/><rect x="80" y="-7" width="45" height="14"/><rect x="200" y="-7" width="30" height="14"/>
+            </g>
+            <g transform="translate(30 210)">
+              <line x1="0" y1="0" x2="200" y2="0"/>
+              <rect x="0" y="-7" width="60" height="14"/><rect x="155" y="-7" width="45" height="14"/>
+            </g>
+          </svg>
+        </div>
+        <div class="feature__body">
+          <span class="feature__num mono">02</span>
+          <p class="feature__cat mono" data-i18n="f2.cat">Master’s thesis · In progress</p>
+          <h3 data-i18n="f2.title">Reference-free SQANTI</h3>
+          <p data-i18n="f2.desc">
+            A reference-independent SQANTI annotation tool for non-model
+            organisms, so that long-read transcriptomes can be curated even
+            when no high-quality genome annotation exists.
+          </p>
+          <ul class="tags mono">
+            <li>Python</li><li>R</li><li data-i18n="tag.nonmodel">Non-model organisms</li><li data-i18n="tag.annotation">Annotation</li>
+          </ul>
+          <div class="feature__foot">
+            <div class="metric">
+              <span class="metric__v">2025–2027</span>
+              <span class="metric__k mono" data-i18n="f2.metric">MSc thesis · Conesa Lab</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature__visual feature__visual--media">
+          <img src="assets/img/4ake_align.gif" width="360" height="255" loading="lazy" alt="Adenylate kinase moving between its open and closed conformations">
+          <span class="feature__caption mono" data-i18n="f3.caption">adenylate kinase · 4AKE family</span>
+        </div>
+        <div class="feature__body">
+          <span class="feature__num mono">03</span>
+          <p class="feature__cat mono" data-i18n="f3.cat">Open-source software · Structural bioinformatics</p>
+          <h3>3D Protein Simulator</h3>
+          <p data-i18n="f3.desc">
+            Pseudo-molecular dynamics from experimentally solved structures.
+            From a single PDB code, it finds other deposited structures of the
+            same protein with BLAST, superimposes them in PyMOL and renders an
+            animation in which the protein moves between its real
+            conformations: domain closure, hinge motions or the rearrangement
+            that follows ligand binding.
+          </p>
+          <ul class="tags mono">
+            <li>Python</li><li>Biopython</li><li>BLAST</li><li>PyMOL</li>
+          </ul>
+          <div class="feature__foot">
+            <div class="metric">
+              <span class="metric__v">PDB → GIF</span>
+              <span class="metric__k mono" data-i18n="f3.metric">one command</span>
+            </div>
+            <div class="feature__links">
+              <a class="link-arrow" href="https://dongazpachowr.github.io/3D_protein_simulator/" target="_blank" rel="noopener" data-i18n="f3.site">Project website</a>
+              <a class="link-arrow" href="https://github.com/DonGazpachoWR/3D_protein_simulator" target="_blank" rel="noopener" data-i18n="f1.link">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <h3 class="subhead mono reveal" data-i18n="work.hack">Hackathons</h3>
+
+      <article class="feature feature--flip reveal">
+        <div class="feature__visual" aria-hidden="true">
+          <svg viewBox="0 0 400 260" class="viz viz--map">
+            <path class="viz__river" d="M-10 196 C 70 160 130 222 210 176 S 330 96 410 124"/>
+            <g class="viz__streets">
+              <line x1="40" y1="0" x2="90" y2="260"/><line x1="150" y1="0" x2="130" y2="260"/>
+              <line x1="250" y1="0" x2="290" y2="260"/><line x1="340" y1="0" x2="360" y2="260"/>
+              <line x1="0" y1="60" x2="400" y2="40"/><line x1="0" y1="130" x2="400" y2="150"/>
+              <line x1="0" y1="232" x2="400" y2="220"/>
+            </g>
+            <g class="viz__pins">
+              <circle cx="70" cy="92" r="5"/><circle cx="118" cy="40" r="5"/><circle cx="186" cy="108" r="5"/>
+              <circle cx="96" cy="186" r="5"/><circle cx="318" cy="186" r="5"/><circle cx="352" cy="70" r="5"/>
+              <circle cx="168" cy="226" r="5"/>
+            </g>
+            <g class="viz__pin-main" transform="translate(256 120)">
+              <circle class="viz__ring" r="18"/>
+              <circle r="7"/>
+            </g>
+            <g transform="translate(272 64)">
+              <path class="viz__bubble" d="M0 8 a8 8 0 0 1 8 -8 h104 a8 8 0 0 1 8 8 v24 a8 8 0 0 1 -8 8 h-96 l-10 12 v-12 a8 8 0 0 1 -6 -8 z"/>
+              <text class="viz__label" x="12" y="17">open now</text>
+              <text class="viz__label viz__label--strong" x="12" y="31">5 min · free</text>
+            </g>
+          </svg>
+        </div>
+        <div class="feature__body">
+          <span class="feature__num mono">04</span>
+          <p class="feature__cat mono" data-i18n="f4.cat">Hackathon INCUBA2 · 1st place · 2026</p>
+          <h3>A PROP</h3>
+          <p data-i18n="f4.desc">
+            A no-download web app that shows the culture near you, matched to
+            your interests and your free time, and rewards coming back. Built
+            by a team of four for the “Culture and Creativity” challenge of
+            the University of Valencia, its Science Park and the Spanish
+            Ministry of Culture, on open data about the cultural spaces and
+            events of the Valencian Community.
+          </p>
+          <ul class="tags mono">
+            <li>Next.js</li><li>Supabase</li><li data-i18n="tag.opendata">Open data</li><li data-i18n="tag.maps">Maps</li>
+          </ul>
+          <div class="feature__foot">
+            <div class="metric">
+              <span class="metric__v" data-i18n="f4.place">1st place</span>
+              <span class="metric__k mono" data-i18n="f4.metric">team of four · 2026</span>
+            </div>
+            <div class="feature__links">
+              <a class="link-arrow" href="https://www.apropvlc.com" target="_blank" rel="noopener">www.apropvlc.com</a>
+              <!-- When the repository is public, remove the is-soon class and aria-disabled. -->
+              <a class="link-arrow is-soon" href="https://github.com/benhaddim/Hackathon_INCUBA2" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1"><span data-i18n="f4.code">Code</span> <span class="soon mono" data-i18n="soon">public soon</span></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 02 Approach -->
+  <section class="section" id="approach">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">02</span>
+        <h2 data-i18n="approach.title">From raw reads to results</h2>
+        <p class="section__sub" data-i18n="approach.sub">What I bring to a project, end to end. Specialised in long reads, at home with short reads too.</p>
+      </header>
+      <div class="path">
+        <svg class="path__svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="path-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1000">
+              <stop offset="0" stop-color="#5ce1c6"/>
+              <stop offset="0.7" stop-color="#5ce1c6"/>
+              <stop offset="1" stop-color="#f5c451"/>
+            </linearGradient>
+          </defs>
+          <path class="path__base"/>
+          <path class="path__line" stroke="url(#path-gradient)"/>
+        </svg>
+        <ol class="path__steps">
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <div class="step__body reveal">
+              <span class="step__num mono">01</span>
+              <h3 data-i18n="a1.title">Sequencing data</h3>
+              <p data-i18n="a1.desc">Long reads are my speciality, from PacBio Iso-Seq to Oxford Nanopore, and I work with short-read Illumina data too. Public datasets or your own runs, RNA or DNA.</p>
+              <ul class="tags mono"><li class="tag--hl" data-i18n="a1.t1">Long reads · speciality</li><li data-i18n="a1.t2">Short reads</li></ul>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <div class="step__body reveal">
+              <span class="step__num mono">02</span>
+              <h3 data-i18n="a2.title">Quality control</h3>
+              <p data-i18n="a2.desc">Read-level QC and filtering, and isoform-level quality control with SQANTI3 to separate real transcripts from technical artefacts.</p>
+              <ul class="tags mono"><li>SQANTI3</li><li data-i18n="a2.t1">Artefact removal</li></ul>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <div class="step__body reveal">
+              <span class="step__num mono">03</span>
+              <h3 data-i18n="a3.title">Mapping, annotation &amp; quantification</h3>
+              <p data-i18n="a3.desc">Alignment to a reference genome, or reference-free strategies when the organism has none, followed by transcript annotation and expression quantification.</p>
+              <ul class="tags mono"><li data-i18n="a3.t1">Isoform annotation</li><li data-i18n="a3.t2">Non-model organisms</li></ul>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <div class="step__body reveal">
+              <span class="step__num mono">04</span>
+              <h3 data-i18n="a4.title">Pipelines &amp; HPC</h3>
+              <p data-i18n="a4.desc">Reproducible pipelines in Python, Bash and R on Linux, versioned with Git and scaled on HPC clusters with SLURM.</p>
+              <ul class="tags mono"><li>Python</li><li>Bash</li><li>SLURM</li><li>Git</li></ul>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot" aria-hidden="true"></span>
+            <div class="step__body reveal">
+              <span class="step__num mono">05</span>
+              <h3 data-i18n="a5.title">Statistics &amp; machine learning</h3>
+              <p data-i18n="a5.desc">Differential expression, survival analysis and predictive models, with R (DESeq2, survival) and Python (scikit-learn, PyTorch, TensorFlow).</p>
+              <ul class="tags mono"><li>DESeq2</li><li>survival</li><li>scikit-learn</li><li>PyTorch</li></ul>
+            </div>
+          </li>
+          <li class="step step--result">
+            <span class="step__dot" aria-hidden="true"></span>
+            <div class="step__body reveal">
+              <span class="step__num mono">06</span>
+              <h3 data-i18n="a6.title">Results</h3>
+              <p data-i18n="a6.desc">Clear figures, an honest interpretation and a report that answers the biological question you started with.</p>
+              <ul class="tags mono"><li>ggplot2</li><li>Matplotlib</li><li data-i18n="a6.t1">Reports</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Toolbox -->
+  <section class="section" id="toolbox">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">03</span>
+        <h2 data-i18n="toolbox.title">Toolbox</h2>
+        <p class="section__sub" data-i18n="toolbox.sub">Languages, libraries and environments I use every day.</p>
+      </header>
+      <div class="toolbox">
+        <div class="tool-group reveal">
+          <h3 class="mono" data-i18n="tb.prog">Programming</h3>
+          <ul class="levels">
+            <li><span>Python</span><span class="level" data-level="3" data-i18n="lvl.adv">advanced</span></li>
+            <li><span>Bash</span><span class="level" data-level="3" data-i18n="lvl.adv">advanced</span></li>
+            <li><span>R</span><span class="level" data-level="2" data-i18n="lvl.mid">intermediate</span></li>
+            <li><span>SQL</span><span class="level" data-level="1" data-i18n="lvl.basic">basic</span></li>
+          </ul>
+        </div>
+        <div class="tool-group reveal">
+          <h3 class="mono" data-i18n="tb.py">Python libraries</h3>
+          <ul class="chips"><li>NumPy</li><li>pandas</li><li>SciPy</li><li>Matplotlib</li><li>Biopython</li></ul>
+        </div>
+        <div class="tool-group reveal">
+          <h3 class="mono" data-i18n="tb.r">R libraries</h3>
+          <ul class="chips"><li>tidyverse</li><li>ggplot2</li><li>Bioconductor</li><li>DESeq2</li><li>survival</li></ul>
+        </div>
+        <div class="tool-group reveal">
+          <h3 class="mono" data-i18n="tb.ml">Machine learning</h3>
+          <ul class="chips"><li>scikit-learn</li><li>PyTorch</li><li>TensorFlow</li></ul>
+        </div>
+        <div class="tool-group reveal">
+          <h3 class="mono" data-i18n="tb.env">Environments &amp; HPC</h3>
+          <ul class="chips"><li>Linux</li><li data-i18n="tb.shell">Shell scripting</li><li>Git &amp; GitHub</li><li>SLURM</li></ul>
+        </div>
+        <div class="tool-group reveal">
+          <h3 class="mono" data-i18n="tb.tx">Transcriptomics</h3>
+          <ul class="chips"><li>SQANTI3</li><li data-i18n="tb.lrqc">Long-read RNA-seq QC</li><li data-i18n="tb.iso">Isoform annotation</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">04</span>
+        <h2 data-i18n="edu.title">Education</h2>
+        <p class="section__sub" data-i18n="edu.sub">Biology, computing and mathematics.</p>
+      </header>
+      <div class="grid grid--3">
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span data-i18n="edu.msc">Master’s degree</span><span data-i18n="edu.now">In progress</span></p>
+          <h3 data-i18n="edu1.title">Master’s Degree in Bioinformatics</h3>
+          <p class="exp__org"><span data-i18n="uv">University of Valencia</span> · 2025 – 2027</p>
+          <p data-i18n="edu1.short">GPA 9.09 / 10, second highest of the cohort. Thesis: a reference-free SQANTI tool for non-model organisms.</p>
+        </article>
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span data-i18n="edu.bsc">Bachelor’s degree</span><span data-i18n="edu.now">In progress</span></p>
+          <h3 data-i18n="edu4.title">Bachelor’s Degree in Mathematics</h3>
+          <p class="exp__org" data-i18n="edu4.org">Studied alongside the master’s</p>
+          <p data-i18n="edu4.short">The mathematical and statistical foundations behind the analyses I run.</p>
+        </article>
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span data-i18n="edu.bsc">Bachelor’s degree</span><span>2021 – 2025</span></p>
+          <h3 data-i18n="edu2.title">Bachelor’s Degree in Biotechnology</h3>
+          <p class="exp__org" data-i18n="uv">University of Valencia</p>
+          <p data-i18n="edu2.short">GPA 8.05 / 10, with honors in 11 courses. Thesis: reduction of ethanol content in wine yeast using ALE and CRISPR-Cas9.</p>
+        </article>
+      </div>
+      <a class="link-arrow section__more reveal" href="about.html#education" data-i18n="edu.more">Full education and training</a>
+    </div>
+  </section>
+
+  <!-- 05 Wet lab experience -->
+  <section class="section" id="wetlab">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">05</span>
+        <h2 data-i18n="wetlab.title">Wet lab experience</h2>
+        <p class="section__sub" data-i18n="wetlab.sub">I know where the data comes from: I have generated it myself.</p>
+      </header>
+      <div class="grid grid--2">
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span>09/2025 – 02/2026</span><span data-i18n="w1.type">JAE Intro studentship</span></p>
+          <h3 data-i18n="w1.title">Aging in <em>C. elegans</em> fed on postbiotics</h3>
+          <p class="exp__org" data-i18n="w1.org">Institute of Agrochemistry and Food Technology (IATA-CSIC)</p>
+          <p data-i18n="w1.desc">Phenotyping of aging and neuromuscular function in a <em>C. elegans</em> model: longevity, motility and fertility assays, with statistical analysis of survival curves.</p>
+          <ul class="tags mono"><li><em>C. elegans</em></li><li data-i18n="tag.survival">Survival analysis</li><li data-i18n="tag.pheno">Phenotyping</li></ul>
+        </article>
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span>09/2024 – 06/2025</span><span data-i18n="w2.type">Bachelor’s thesis</span></p>
+          <h3 data-i18n="w2.title">Low-ethanol wine yeasts</h3>
+          <p class="exp__org" data-i18n="w2.org">Institute of Integrative Systems Biology (I2SysBio, UV-CSIC)</p>
+          <p data-i18n="w2.desc">CRISPR-Cas9 point mutations and adaptive laboratory evolution to obtain a wine yeast that produces less ethanol and acetic acid and more glycerol. Protein docking with Python and PyMOL to evaluate mutations affecting protein–protein interactions.</p>
+          <ul class="tags mono"><li>CRISPR-Cas9</li><li>ALE</li><li data-i18n="tag.docking">Protein docking</li></ul>
+        </article>
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span>11/2024 – 03/2025</span><span data-i18n="w3.type">Student researcher · part-time</span></p>
+          <h3 data-i18n="w3.title">Lactic acid bacteria against <em>Brettanomyces</em></h3>
+          <p class="exp__org" data-i18n="w3.org">Institute of Biotechnology and Biomedicine (BIOTECMED, UV). Enology Lab of Sergi Ferrer and Isabel Pardo.</p>
+          <p data-i18n="w3.desc">Lactic acid bacteria extracts against <em>Brettanomyces bruxellensis</em>, the yeast behind off-odours in wine.</p>
+          <ul class="tags mono"><li data-i18n="tag.micro">Microbiology</li><li data-i18n="tag.biofilm">Biofilms</li><li data-i18n="tag.metab">Secondary metabolites</li></ul>
+        </article>
+        <article class="exp reveal">
+          <p class="exp__meta mono"><span>06/2024 – 08/2024</span><span data-i18n="w4.type">Internship</span></p>
+          <h3 data-i18n="w4.title">Plant molecular biology &amp; confocal microscopy</h3>
+          <p class="exp__org" data-i18n="w4.org">Institute for Plant Molecular and Cell Biology (IBMCP, UPV-CSIC).</p>
+          <p data-i18n="w4.desc">Curricular internship as a laboratory technician in plant molecular biology and confocal microscopy.</p>
+          <ul class="tags mono"><li data-i18n="tag.plant">Plant molecular biology</li><li data-i18n="tag.confocal">Confocal microscopy</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Publications & talks -->
+  <section class="section" id="publications">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">06</span>
+        <h2 data-i18n="pubs.title">Publications &amp; talks</h2>
+        <p class="section__sub" data-i18n="pubs.sub">Software I lead or contribute to, papers, posters and talks.</p>
+      </header>
+
+      <div class="pub-group reveal">
+        <h3 class="pub-group__title mono"><span data-i18n="pg.lead">Software — leader</span><span class="pub-group__count">1</span></h3>
+        <ol class="pubs">
+          <li class="pub">
+            <div>
+              <p class="pub__title"><a href="https://github.com/DonGazpachoWR/3D_protein_simulator" target="_blank" rel="noopener">3D Protein Simulator</a></p>
+              <p class="pub__venue" data-i18n="p.sim">Pseudo-molecular dynamics animations from experimental PDB structures. Python, Biopython, BLAST and PyMOL.</p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group reveal">
+        <h3 class="pub-group__title mono"><span data-i18n="pg.contrib">Software — contributor</span><span class="pub-group__count">2</span></h3>
+        <ol class="pubs">
+          <li class="pub">
+            <div>
+              <p class="pub__title"><a href="https://github.com/ConesaLab/SQANTI3" target="_blank" rel="noopener">SQANTI3</a></p>
+              <p class="pub__venue" data-i18n="p1.venue">Contributor to release v6.1. Multi-sample filtering module for long-read isoform quality control.</p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+          <li class="pub">
+            <div>
+              <p class="pub__title"><a href="https://www.apropvlc.com" target="_blank" rel="noopener">A PROP</a></p>
+              <p class="pub__venue" data-i18n="p.aprop">Team web app, 1st place at Hackathon INCUBA2, built to bring young people to local cultural spaces. Next.js, Supabase and open data.</p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group reveal">
+        <h3 class="pub-group__title mono"><span data-i18n="pg.papers">Publications</span><span class="pub-group__count">3</span></h3>
+        <ol class="pubs">
+          <li class="pub">
+            <div>
+              <p class="pub__title">Caenorhabditis elegans as a model for testing microbiota-derived nutritional solutions for human health.</p>
+              <p class="pub__authors"><strong>Berenguer-Agustí, A.</strong>, Hernández, P., Ortega, L., Parodi, A., Benítez-Páez, A.</p>
+              <p class="pub__venue"><em>Nutrition Reviews</em> (Oxford Academic). <span class="badge" data-i18n="pt.review">Under review</span></p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+          <li class="pub">
+            <div>
+              <p class="pub__title">Systematic mutational analysis reveals functional redundancy and pathway crosstalk in succinic acid biosynthesis by Saccharomyces cerevisiae during winemaking.</p>
+              <p class="pub__authors">Garrigós, V., Muñoz-Margaix, H., Kojenova, G., Miró-Tudela, M., <strong>Berenguer-Agustí, A.</strong>, Picazo, C., Aranda, A.</p>
+              <p class="pub__venue"><em>Journal of Agricultural and Food Chemistry</em>. <span class="badge" data-i18n="pt.review">Under review</span></p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+          <li class="pub">
+            <div>
+              <p class="pub__title">Spray-dried supernatant preparation from wine-associated lactic acid bacteria inhibit Brettanomyces bruxellensis growth, adhesion, and biofilm formation and show antioxidant capacity.</p>
+              <p class="pub__authors">Alberto, M., <strong>Berenguer-Agustí, A.</strong>, Vázquez, R., Meca, G., Ferrer, S., Pardo, I., Arena, M.</p>
+              <p class="pub__venue"><span class="badge" data-i18n="pt.prep">In preparation</span></p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group reveal">
+        <h3 class="pub-group__title mono"><span data-i18n="pg.posters">Posters</span><span class="pub-group__count">1</span></h3>
+        <ol class="pubs">
+          <li class="pub">
+            <div>
+              <p class="pub__title">The metabolic panacea? Evaluation of the effectiveness and safety of semaglutide indicated for weight loss in obese patients.</p>
+              <p class="pub__authors">Hernández, R., <strong>Berenguer-Agustí, A.</strong>, Alonso, L., Dasí, F.</p>
+              <p class="pub__venue" data-i18n="p.poster.venue">XIV Biomedical Research Congress, Valencia, Spain.</p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group reveal">
+        <h3 class="pub-group__title mono"><span data-i18n="pg.talks">Talks</span><span class="pub-group__count">1</span></h3>
+        <ol class="pubs">
+          <li class="pub">
+            <div>
+              <p class="pub__title">C. elegans model for strains with postbiotic potential.</p>
+              <p class="pub__authors"><strong>Berenguer-Agustí, A.</strong>, Benítez-Páez, A.</p>
+              <p class="pub__venue">Workshop JAE Intro Conexión Microbioma-CSIC.</p>
+            </div>
+            <span class="pub__year mono">2026</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 Awards, one year after another -->
+  <section class="section" id="awards">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">07</span>
+        <h2 data-i18n="awards.title">Awards</h2>
+        <p class="section__sub" data-i18n="awards.sub">Innovation, entrepreneurship and academic recognition.</p>
+      </header>
+      <ol class="award-line">
+        <li class="award-year reveal">
+          <h3 class="award-year__y mono">2026</h3>
+          <ul>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.incuba">Hackathon INCUBA2, Science Park of the University of Valencia</span></li>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.openinn">National Open Innovation competition</span></li>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.bisce">National BISC-E Challenge</span></li>
+            <li><span class="rank rank--word" data-i18n="aw.finalist">Finalist</span><span data-i18n="aw.bisceeu">European BISC-E Challenge</span></li>
+            <li><span class="rank" data-i18n="place.2"><span class="rank__n">2</span>nd</span><span data-i18n="aw.santander">Valencia Santander X Awards</span></li>
+            <li><span class="rank" data-i18n="place.23"><span class="rank__n">2</span>nd–<span class="rank__n">3</span>rd</span><span data-i18n="aw.tfg">Best National Bachelor Thesis in Sustainability</span></li>
+            <li><span class="rank rank--word" data-i18n="aw.selected">Selected</span><span data-i18n="aw.fpdg">Generación Propósito programme, Fundación Princesa de Girona</span></li>
+          </ul>
+        </li>
+        <li class="award-year reveal">
+          <h3 class="award-year__y mono">2025</h3>
+          <ul>
+            <li><span class="rank rank--word" data-i18n="aw.finalist">Finalist</span><span data-i18n="aw.ybt">Valencian Young Biotech Talent</span></li>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.agro">Agrotechnology Competition, University of Valencia</span></li>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.motivem">Sciences Motivem Awards</span></li>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.preinc">Pre-incubators, University of Valencia</span></li>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.preinceco">Economy pre-incubator, University of Valencia</span></li>
+          </ul>
+        </li>
+        <li class="award-year reveal">
+          <h3 class="award-year__y mono">2024</h3>
+          <ul>
+            <li><span class="rank" data-i18n="place.1"><span class="rank__n">1</span>st</span><span data-i18n="aw.agro">Agrotechnology Competition, University of Valencia</span></li>
+            <li><span class="rank" data-i18n="place.2"><span class="rank__n">2</span>nd</span><span data-i18n="aw.startup">University of Valencia Startup Award</span></li>
+          </ul>
+        </li>
+        <li class="award-year reveal">
+          <h3 class="award-year__y mono">2021</h3>
+          <ul>
+            <li><span class="rank" data-i18n="place.6"><span class="rank__n">6</span>th</span><span data-i18n="aw.olymp">Biology Olympiad</span></li>
+            <li><span class="rank" data-i18n="place.2"><span class="rank__n">2</span>nd</span><span data-i18n="aw.sapiencia">Valencian Community Sapiencia Awards</span></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 08 Science communication -->
+  <section class="section" id="outreach">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="section__num mono">08</span>
+        <h2 data-i18n="outreach.title">Science communication</h2>
+        <p class="section__sub" data-i18n="outreach.sub">Taking science out of the lab.</p>
+      </header>
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <span class="card__num mono">2026</span>
+          <h3>Speed Dating</h3>
+          <p data-i18n="o1.desc">European Researchers’ Night.</p>
+        </div>
+        <div class="card reveal">
+          <span class="card__num mono">2026</span>
+          <h3 data-i18n="o2.title">Microbiome’s talk</h3>
+          <p>Pint of Science.</p>
+        </div>
+        <div class="card reveal">
+          <span class="card__num mono">ISCB</span>
+          <h3 data-i18n="o3.title">Volunteer</h3>
+          <p data-i18n="o3.desc">International Society for Computational Biology, Regional Student Group in Spain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 Contact -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text reveal">
+        <span class="section__num mono">09</span>
+        <h2 data-i18n="contact.title">Let’s talk science.</h2>
+        <p class="section__sub" data-i18n="contact.sub">Open to collaborations, PhD opportunities and data-heavy problems.</p>
+        <ul class="contact__links">
+          <li><a href="mailto:adrian9420agusti@gmail.com"><span class="mono">Email</span><span>adrian9420agusti@gmail.com</span></a></li>
+          <li><a href="https://www.linkedin.com/in/adri%C3%A1n-berenguer-agust%C3%AD" target="_blank" rel="noopener"><span class="mono">LinkedIn</span><span>Adrián Berenguer Agustí</span></a></li>
+          <li><a href="https://github.com/DonGazpachoWR" target="_blank" rel="noopener"><span class="mono">GitHub</span><span>DonGazpachoWR</span></a></li>
+          <li><a href="https://bsky.app/profile/berengueragusti.bsky.social" target="_blank" rel="noopener"><span class="mono">Bluesky</span><span>@berengueragusti.bsky.social</span></a></li>
+          <li><a href="assets/cv/Adrian_Berenguer_Agusti_CV.pdf" target="_blank" rel="noopener"><span class="mono">CV</span><span data-i18n="cv.pdf">Download PDF</span></a></li>
+          <li><div class="contact__row"><span class="mono" data-i18n="place.k">Based in</span><span data-i18n="place">Valencia, Spain, Europe</span></div></li>
+        </ul>
+      </div>
+      <figure class="portrait reveal">
+        <img src="assets/img/portrait.jpg" width="320" height="400" alt="Adrián Berenguer Agustí">
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner mono">
+    <span>© 2026 Adrián Berenguer Agustí</span>
+    <span data-i18n="place">Valencia, Spain, Europe</span>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js?v=d18a4bf"></script>
+<script src="assets/js/main.js?v=d18a4bf"></script>
+<script src="assets/js/intro.js?v=d18a4bf"></script>
+<script src="assets/js/approach.js?v=d18a4bf"></script>
+</body>
+</html>
